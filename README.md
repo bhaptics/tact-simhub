@@ -1,18 +1,5 @@
 # bHaptics SimHub Plugin README
 
-## 설치 전 필수사항 (Prerequisites)
-* bHaptics Player 2.5.6.72 버전 이상
-* [SimHub 설치](https://www.simhubdash.com/download-2/)
-
-## 설치 방법 (Installation)
-* [릴리즈에서 dll 다운로드](https://github.com/bhaptics/tact-simhub/releases/tag/v0.01)
-* dll을 SimHub 설치 폴더에 붙여넣기 (기본 설치 위치 - C:\Program Files (x86)\SimHub)
-* SimHub 실행 - Additional Plugins에서 bHaptics SimHub Plugin 확인
-
----
-
-# bHaptics SimHub Plugin README
-
 ## Prerequisites
 * bHaptics Player 2.5.6.72 or higher
 * [SimHub installation](https://www.simhubdash.com/download-2/)
@@ -21,6 +8,19 @@
 * [Download the DLL from releases](https://github.com/bhaptics/tact-simhub/releases/tag/v0.01)
 * Paste the DLL into your SimHub installation folder (Default location - C:\Program Files (x86)\SimHub)
 * Run SimHub - Check for bHaptics SimHub Plugin in the Additional Plugins section
+
+---
+
+# bHaptics SimHub Plugin README
+
+## 설치 전 필수사항 (Prerequisites)
+* bHaptics Player 2.5.6.72 버전 이상
+* [SimHub 설치](https://www.simhubdash.com/download-2/)
+
+## 설치 방법 (Installation)
+* [릴리즈에서 dll 다운로드](https://github.com/bhaptics/tact-simhub/releases/tag/v0.01)
+* dll을 SimHub 설치 폴더에 붙여넣기 (기본 설치 위치 - C:\Program Files (x86)\SimHub)
+* SimHub 실행 - Additional Plugins에서 bHaptics SimHub Plugin 확인
 
 
 
