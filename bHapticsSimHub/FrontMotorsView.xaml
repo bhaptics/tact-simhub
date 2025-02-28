@@ -1,0 +1,258 @@
+﻿<UserControl
+    x:Class="bHapticsSimHub.FrontMotorsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:bHapticsSimHub"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="1800"
+    DataContext="{x:Static local:SimhubViewModel.Instance}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="ToggleOnOff" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Grid>
+                            <Border
+                                Background="#3E3E3E"
+                                BorderBrush="#3E3E3E"
+                                BorderThickness="0"
+                                CornerRadius="2">
+                                <Border.Visibility>
+                                    <Binding Path="IsChecked" RelativeSource="{RelativeSource TemplatedParent}">
+                                        <Binding.Converter>
+                                            <local:BooleanToVisibilityConverter False="Visible" True="Collapsed" />
+                                        </Binding.Converter>
+                                    </Binding>
+                                </Border.Visibility>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="14"
+                                    Foreground="White"
+                                    Text="OFF"
+                                    TextAlignment="Center"
+                                    TextWrapping="Wrap" />
+                            </Border>
+                            <Border
+                                Background="#119EDA"
+                                BorderBrush="#119EDA"
+                                BorderThickness="0"
+                                CornerRadius="2">
+                                <Border.Visibility>
+                                    <Binding Path="IsChecked" RelativeSource="{RelativeSource TemplatedParent}">
+                                        <Binding.Converter>
+                                            <local:BooleanToVisibilityConverter />
+                                        </Binding.Converter>
+                                    </Binding>
+                                </Border.Visibility>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="14"
+                                    Foreground="White"
+                                    Text="ON"
+                                    TextAlignment="Center"
+                                    TextWrapping="Wrap" />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonNull" TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="Foreground" Value="{x:Null}" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border>
+                            <Border.Style>
+                                <Style TargetType="{x:Type Border}">
+                                    <Style.Triggers />
+                                </Style>
+                            </Border.Style>
+                            <Grid Background="Transparent">
+                                <ContentPresenter />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <StackPanel Margin="80,15,0,20">
+            <ItemsControl ItemsSource="{Binding FrontMotors}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,0,10,0">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                FontSize="14"
+                                FontWeight="Bold"
+                                Foreground="White"
+                                Text="{Binding Name}"
+                                TextWrapping="Wrap" />
+                            <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+                                <Button
+                                    Width="24"
+                                    Height="24"
+                                    Command="{Binding MinusCommonad}"
+                                    Style="{StaticResource ButtonNull}">
+                                    <Image
+                                        Width="24"
+                                        Height="24"
+                                        Source="pack://application:,,,/bHapticsSimHub;component/Image/remove.png" />
+                                </Button>
+                                <Grid
+                                    Width="118"
+                                    Height="24"
+                                    Margin="2,0">
+                                    <Rectangle
+                                        Width="118"
+                                        HorizontalAlignment="Left"
+                                        Fill="#3E3E3E" />
+
+
+                                    <Rectangle
+                                        Width="{Binding Width}"
+                                        HorizontalAlignment="Left"
+                                        Fill="#8E50FF" />
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="14"
+                                        FontWeight="Bold"
+                                        Foreground="White"
+                                        Text="{Binding Intensity, StringFormat={}{0}%}"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap" />
+                                </Grid>
+                                <Button
+                                    Width="24"
+                                    Height="24"
+                                    Command="{Binding PlusCommonad}"
+                                    Style="{StaticResource ButtonNull}">
+                                    <Image
+                                        Width="24"
+                                        Height="24"
+                                        Source="pack://application:,,,/bHapticsSimHub;component/Image/add.png" />
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+
+        <ItemsControl ItemsSource="{Binding Items}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                        <TextBlock
+                            Width="80"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            Text="{Binding Name}"
+                            TextWrapping="Wrap" />
+
+                        <ItemsControl ItemsSource="{Binding FrontMotors}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel
+                                        Width="170"
+                                        Height="50"
+                                        Margin="0,0,10,20">
+                                        <ToggleButton
+                                            Width="170"
+                                            Height="24"
+                                            HorizontalAlignment="Left"
+                                            Command="{Binding StatusCommonad}"
+                                            FontWeight="Bold"
+                                            IsChecked="{Binding IsSelected, Mode=OneWay}"
+                                            Style="{StaticResource ToggleOnOff}" />
+                                        <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                            <Button
+                                                Width="24"
+                                                Height="24"
+                                                Command="{Binding MinusCommonad}"
+                                                Style="{StaticResource ButtonNull}">
+                                                <Image
+                                                    Width="24"
+                                                    Height="24"
+                                                    Source="pack://application:,,,/bHapticsSimHub;component/Image/remove.png" />
+                                            </Button>
+                                            <Grid
+                                                Width="118"
+                                                Height="24"
+                                                Margin="2,0">
+                                                <Rectangle
+                                                    Width="118"
+                                                    HorizontalAlignment="Left"
+                                                    Fill="#3E3E3E" />
+
+                                                <Rectangle
+                                                    Width="{Binding Width}"
+                                                    HorizontalAlignment="Left"
+                                                    Fill="#24A148" />
+
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    FontSize="14"
+                                                    FontWeight="Bold"
+                                                    Foreground="White"
+                                                    Text="{Binding Intensity, StringFormat={}{0}%}"
+                                                    TextAlignment="Center"
+                                                    TextWrapping="Wrap" />
+                                            </Grid>
+                                            <Button
+                                                Width="24"
+                                                Height="24"
+                                                Command="{Binding PlusCommonad}"
+                                                Style="{StaticResource ButtonNull}">
+                                                <Image
+                                                    Width="24"
+                                                    Height="24"
+                                                    Source="pack://application:,,,/bHapticsSimHub;component/Image/add.png" />
+                                            </Button>
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</UserControl>
