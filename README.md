@@ -1,4 +1,5 @@
-# bHaptics SimHub Plugin README
+# bHaptics SimHub Plugin
+This is a SimHub plugin for [bHaptics devices](https://bhap.it/43z0cOb)
 
 ## Prerequisites
 * [bHaptics Player](https://bhap.it/42eQG0l) (v2.5.6.72 or higher)
@@ -13,6 +14,11 @@
 
 ### 3. Run SimHub - Check for bHaptics SimHub Plugin in the Additional Plugins section
 ![paste the dll into simhub](images/run-simhub.gif)
+
+## How to use the plugin
+1. Run both [bHaptics Player](https://bhap.it/42eQG0l) and [SimHub](https://www.simhubdash.com/) with the bHaptics SimHub plugin
+2. Play a sim racing game that supports SimHub
+
 
 ## Screenshots
 
