@@ -1,11 +1,11 @@
 # bHaptics SimHub Plugin README
 
 ## Prerequisites
-* bHaptics Player 2.5.6.72 or higher
+* [bHaptics Player](https://bhap.it/42eQG0l) (v2.5.6.72 or higher)
 * [SimHub installation](https://www.simhubdash.com/download-2/)
 
 ## Installation
-* [Download the DLL from releases](https://github.com/bhaptics/tact-simhub/releases/tag/v0.01)
+* [Download the **bHapticsSimHub.dll** file from releases page](https://github.com/bhaptics/tact-simhub/releases/latest)
 * Paste the DLL into your SimHub installation folder (Default location - C:\Program Files (x86)\SimHub)
 * Run SimHub - Check for bHaptics SimHub Plugin in the Additional Plugins section
 
