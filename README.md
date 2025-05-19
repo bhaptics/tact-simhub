@@ -28,6 +28,7 @@ This is a SimHub plugin for [bHaptics devices](https://bhap.it/43z0cOb)
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/e29fbefb-8d54-4faf-9c36-76a6bcd00b4e)
-![image](https://github.com/user-attachments/assets/03c669de-f7ca-4f5f-85f9-a26d83c42597)
-![image](https://github.com/user-attachments/assets/1a3967b1-1d36-4298-9d3b-44292d7803f3)
+![main](images/bh-main.png)
+![front](images/bh-front.png)
+![back](images/bh-back.png)
+![sleeve](images/bh-sleeve.png)

@@ -1,0 +1,753 @@
+﻿<UserControl
+    x:Class="bHapticsSimHub.SettingView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:bHapticsSimHub"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="1800"
+    DataContext="{x:Static local:SimhubViewModel.Instance}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="ComboBoxDisabledBorderBrush" Color="#282828" />
+        <SolidColorBrush x:Key="ComboBoxDisabledForegroundBrush" Color="#888" />
+        <SolidColorBrush x:Key="ComboBoxDisabledBackgroundBrush" Color="#181818" />
+
+        <Style x:Key="ButtonDefault" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#fed600" />
+            <Setter Property="BorderBrush" Value="#fed600" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border
+                            x:Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5"
+                            SnapsToDevicePixels="true">
+                            <Grid>
+                                <Grid.Background>
+                                    <SolidColorBrush
+                                        x:Name="bgDefault"
+                                        Opacity="0"
+                                        Color="#000000" />
+                                </Grid.Background>
+                                <ContentPresenter
+                                    x:Name="contentPresenter"
+                                    Margin="{TemplateBinding Padding}"
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                    Focusable="False"
+                                    RecognizesAccessKey="True"
+                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="bgDefault"
+                                                Storyboard.TargetProperty="Opacity"
+                                                To="0.1"
+                                                Duration="0:0:0.200" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="bgDefault"
+                                                Storyboard.TargetProperty="Opacity"
+                                                To="0"
+                                                Duration="0:0:0.200" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true" />
+                            <Trigger Property="IsEnabled" Value="false" />
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonNull" TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="Foreground" Value="{x:Null}" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border>
+                            <Border.Style>
+                                <Style TargetType="{x:Type Border}">
+                                    <Style.Triggers />
+                                </Style>
+                            </Border.Style>
+                            <Grid Background="Transparent">
+                                <ContentPresenter />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonSubSort" TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="#1d1d1d" />
+            <Setter Property="Background" Value="#1d1d1d" />
+            <Setter Property="Foreground" Value="{x:Null}" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Width" Value="207" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                Storyboard.TargetName="bgBtnSubSort"
+                                                Storyboard.TargetProperty="Background.Color"
+                                                To="#393839"
+                                                Duration="0:0:0.300" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                Storyboard.TargetName="bgBtnSubSort"
+                                                Storyboard.TargetProperty="Background.Color"
+                                                To="#1d1d1d"
+                                                Duration="0:0:0.300" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                        <Border
+                            x:Name="bgBtnSubSort"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0">
+                            <Grid Background="Transparent">
+                                <ContentPresenter />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#393839" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <ControlTemplate x:Key="SortComboBoxToggleButtonTemplate" TargetType="ToggleButton">
+            <Grid x:Name="Container">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <Border
+                    Name="Border"
+                    Grid.ColumnSpan="2"
+                    Background="#1d1d1d"
+                    BorderBrush="#1d1d1d"
+                    BorderThickness="0"
+                    CornerRadius="5" />
+                <Image
+                    Grid.Column="1"
+                    Width="24"
+                    Height="24"
+                    Margin="0,0,10,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-expand-more.png" />
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="UIElement.IsMouseOver" Value="True" />
+                <Trigger Property="ToggleButton.IsChecked" Value="True" />
+                <Trigger Property="UIElement.IsEnabled" Value="False">
+                    <Setter TargetName="Border" Property="Panel.Background" Value="{StaticResource ComboBoxDisabledBackgroundBrush}" />
+                    <Setter Property="TextElement.Foreground" Value="{StaticResource ComboBoxDisabledForegroundBrush}" />
+                </Trigger>
+
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    Storyboard.TargetName="Border"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    To="#393839"
+                                    Duration="0:0:0.200" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    Storyboard.TargetName="Border"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    To="#1d1d1d"
+                                    Duration="0:0:0.200" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#363636" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Border
+                            x:Name="Border"
+                            Width="{TemplateBinding Width}"
+                            Height="{TemplateBinding Height}"
+                            Padding="12,0,0,0"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="0"
+                            SnapsToDevicePixels="true">
+                            <ContentPresenter VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Opacity="0.2" Color="White" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SortComboBox" TargetType="{x:Type ComboBox}">
+            <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
+            <Setter Property="FrameworkElement.OverridesDefaultStyle" Value="True" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+            <Setter Property="TextElement.Foreground" Value="White" />
+            <Setter Property="TextElement.FontSize" Value="15" />
+            <Setter Property="FrameworkElement.FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Background" Value="#1d1d1d" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton
+                                Name="ToggleButton"
+                                Grid.Column="2"
+                                ClickMode="Press"
+                                Focusable="False"
+                                IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                                Template="{StaticResource SortComboBoxToggleButtonTemplate}" />
+
+                            <StackPanel
+                                Margin="10,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                                <ContentPresenter
+                                    Name="ContentSite"
+                                    Content="{TemplateBinding Text}"
+                                    ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}"
+                                    ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                    IsHitTestVisible="False" />
+                            </StackPanel>
+                            <TextBox
+                                Name="PART_EditableTextBox"
+                                Margin="10,5,23,5"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Background="Transparent"
+                                Focusable="True"
+                                IsReadOnly="{TemplateBinding IsReadOnly}"
+                                Visibility="Hidden">
+                                <TextBox.Template>
+                                    <ControlTemplate TargetType="TextBox">
+                                        <Border
+                                            Name="PART_ContentHost"
+                                            BorderThickness="0"
+                                            Focusable="False" />
+                                    </ControlTemplate>
+                                </TextBox.Template>
+                            </TextBox>
+                            <!--  Popup showing items  -->
+                            <Popup
+                                Name="Popup"
+                                AllowsTransparency="True"
+                                Focusable="False"
+                                IsOpen="{TemplateBinding ComboBox.IsDropDownOpen}"
+                                Placement="Bottom"
+                                PopupAnimation="Slide"
+                                StaysOpen="False">
+                                <Popup.Triggers>
+                                    <EventTrigger RoutedEvent="Loaded">
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="Popup"
+                                                    Storyboard.TargetProperty="Opacity"
+                                                    From="0.5"
+                                                    To="1"
+                                                    Duration="0:0:0.3" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </Popup.Triggers>
+                                <Grid
+                                    Name="DropDown"
+                                    MinWidth="{TemplateBinding FrameworkElement.ActualWidth}"
+                                    MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}"
+                                    SnapsToDevicePixels="True">
+                                    <Rectangle
+                                        Fill="#1d1d1d"
+                                        RadiusX="5"
+                                        RadiusY="5" />
+                                    <ScrollViewer Margin="0,10,0,10" SnapsToDevicePixels="True">
+                                        <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="ItemsControl.HasItems" Value="False" />
+                            <Trigger Property="UIElement.IsEnabled" Value="False">
+                                <Setter Property="TextElement.Foreground" Value="{StaticResource ComboBoxDisabledForegroundBrush}" />
+                            </Trigger>
+                            <Trigger Property="ItemsControl.IsGrouping" Value="True">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+                            </Trigger>
+                            <Trigger Property="ComboBox.IsEditable" Value="True">
+                                <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+                                <Setter TargetName="PART_EditableTextBox" Property="UIElement.Visibility" Value="Visible" />
+                                <Setter TargetName="ContentSite" Property="UIElement.Visibility" Value="Hidden" />
+                            </Trigger>
+                            <Trigger Property="IsDropDownOpen" Value="False">
+                                <Setter TargetName="Popup" Property="IsOpen" Value="False" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SortComboBoxItem" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#363636" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Border
+                            x:Name="Border"
+                            Width="{TemplateBinding Width}"
+                            Height="{TemplateBinding Height}"
+                            Padding="0,0,0,0"
+                            BorderThickness="0"
+                            SnapsToDevicePixels="true">
+                            <ContentPresenter VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="#393839" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <DockPanel>
+            <Grid Margin="0,30,0,0" DockPanel.Dock="Top">
+                <StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <Button
+                            Height="24"
+                            Command="{Binding ResetCommonad}"
+                            Style="{StaticResource ButtonNull}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Foreground="White"
+                                    Text="Reset"
+                                    TextWrapping="Wrap" />
+                                <Image
+                                    Width="24"
+                                    Height="24"
+                                    Margin="4,0,0,0"
+                                    Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-reset.png" />
+                            </StackPanel>
+                        </Button>
+                        <Button
+                            Height="24"
+                            Margin="16,0"
+                            Command="{Binding ExportCommonad}"
+                            Style="{StaticResource ButtonNull}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Foreground="White"
+                                    Text="Export"
+                                    TextWrapping="Wrap" />
+                                <Image
+                                    Width="24"
+                                    Height="24"
+                                    Margin="4,0,0,0"
+                                    Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-export.png" />
+                            </StackPanel>
+                        </Button>
+                        <Button
+                            Height="24"
+                            Command="{Binding ImportCommonad}"
+                            Style="{StaticResource ButtonNull}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Foreground="White"
+                                    Text="Import"
+                                    TextWrapping="Wrap" />
+                                <Image
+                                    Width="24"
+                                    Height="24"
+                                    Margin="4,0,0,0"
+                                    Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-import.png" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                    <ComboBox
+                        x:Name="profileList"
+                        Width="300"
+                        Height="36"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FocusVisualStyle="{x:Null}"
+                        ItemContainerStyle="{StaticResource SortComboBoxItem}"
+                        ItemsSource="{Binding Profiles}"
+                        Style="{StaticResource SortComboBox}"
+                        Text="{Binding SelectedProfile.Id}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button
+                                        HorizontalAlignment="Left"
+                                        Click="Button_Click"
+                                        Command="{x:Static local:SimhubViewModel.SelectProfileCommonad}"
+                                        CommandParameter="{Binding .}"
+                                        Style="{StaticResource ButtonSubSort}">
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="14"
+                                            Foreground="White"
+                                            Text="{Binding Id}" />
+                                    </Button>
+
+                                    <Button
+                                        Width="70"
+                                        Height="30"
+                                        Click="Button_Click"
+                                        Command="{x:Static local:SimhubViewModel.DeleteProfileCommonad}"
+                                        CommandParameter="{Binding .}"
+                                        Style="{StaticResource ButtonDefault}"
+                                        Visibility="{Binding IsVisible}">
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="12"
+                                            Foreground="Black"
+                                            Text="Delete" />
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+
+                    <StackPanel>
+                        <Image
+                            Width="30"
+                            Height="30"
+                            HorizontalAlignment="Center"
+                            Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-suit.png" />
+
+                        <StackPanel
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                            <Button
+                                Command="{Binding SelectModeCommonad}"
+                                CommandParameter="all"
+                                Style="{StaticResource ButtonNull}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="24"
+                                        FontWeight="Bold"
+                                        IsEnabled="{Binding IsAllSelected}"
+                                        Text="All"
+                                        TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Foreground" Value="White" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="False">
+                                                        <Setter Property="Foreground" Value="#545454" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Button>
+
+                            <Button
+                                Margin="28,0"
+                                Command="{Binding SelectModeCommonad}"
+                                CommandParameter="front"
+                                Style="{StaticResource ButtonNull}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="24"
+                                        FontWeight="Bold"
+                                        IsEnabled="{Binding IsFrontSelected}"
+                                        Text="Front"
+                                        TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Foreground" Value="White" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="False">
+                                                        <Setter Property="Foreground" Value="#545454" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Button>
+
+                            <Button
+                                Command="{Binding SelectModeCommonad}"
+                                CommandParameter="back"
+                                Style="{StaticResource ButtonNull}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="24"
+                                        FontWeight="Bold"
+                                        IsEnabled="{Binding IsBackSelected}"
+                                        Text="Back"
+                                        TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Foreground" Value="White" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="False">
+                                                        <Setter Property="Foreground" Value="#545454" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Grid
+                        Width="1"
+                        Height="29"
+                        Margin="30,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Background="#545454" />
+
+                    <StackPanel>
+                        <Image
+                            Width="30"
+                            Height="30"
+                            HorizontalAlignment="Center"
+                            Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-sleeves.png" />
+                        <Button
+                            Command="{Binding SelectModeCommonad}"
+                            CommandParameter="Sleeves"
+                            Style="{StaticResource ButtonNull}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="24"
+                                    FontWeight="Bold"
+                                    IsEnabled="{Binding IsSleevesSelected}"
+                                    Text="Sleeves"
+                                    TextWrapping="Wrap">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="White" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="False">
+                                                    <Setter Property="Foreground" Value="#545454" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                    <Grid
+                        Width="1"
+                        Height="29"
+                        Margin="30,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Background="#545454"
+                        Visibility="Collapsed" />
+
+                    <StackPanel Visibility="Collapsed">
+                        <Image
+                            Width="30"
+                            Height="30"
+                            HorizontalAlignment="Center"
+                            Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-event.png" />
+
+                        <Button
+                            Command="{Binding SelectModeCommonad}"
+                            CommandParameter="Event"
+                            Style="{StaticResource ButtonNull}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="24"
+                                    FontWeight="Bold"
+                                    IsEnabled="{Binding IsEventSelected}"
+                                    Text="Events"
+                                    TextWrapping="Wrap">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="White" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="False">
+                                                    <Setter Property="Foreground" Value="#545454" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+                <Button
+                    Height="24"
+                    HorizontalAlignment="Right"
+                    Command="{Binding MotorPositionViewCommonad}"
+                    Style="{StaticResource ButtonNull}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            Text="Motor Position Information"
+                            TextWrapping="Wrap" />
+                        <Image
+                            Width="24"
+                            Height="24"
+                            Margin="4,0,0,0"
+                            Source="pack://application:,,,/bHapticsSimHub;component/Image/icon-info.png" />
+                    </StackPanel>
+                </Button>
+            </Grid>
+
+            <ScrollViewer
+                Width="{Binding Path=Width, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Height="{Binding Path=Height, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                HorizontalScrollBarVisibility="Visible"
+                VerticalScrollBarVisibility="Visible">
+                <Grid>
+                    <local:AllMotorsView Visibility="{Binding AllVisibility}" />
+                    <local:FrontMotorsView Visibility="{Binding FrontVisibility}" />
+                    <local:BackMotorsView Visibility="{Binding BackVisibility}" />
+                    <local:SleevesMotorView Visibility="{Binding SleevesVisibility}" />
+                    <local:EventView Visibility="{Binding EventVisibility}" />
+                </Grid>
+            </ScrollViewer>
+        </DockPanel>
+        <Border
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Black"
+            BorderBrush="Black"
+            CornerRadius="16"
+            Visibility="{Binding MotorPositionVisible}">
+            <local:MotorPositionView />
+        </Border>
+    </Grid>
+
+</UserControl>
