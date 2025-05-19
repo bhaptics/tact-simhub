@@ -1,0 +1,1821 @@
+{
+  "TactSuit": [
+    {
+      "Name": "ABS Active",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        }
+      ]
+    },
+    {
+      "Name": "RPMS",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 80
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 80
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "Speed",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 3
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 3
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "TC Active",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "Gear Shift",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        }
+      ]
+    },
+    {
+      "Name": "FrontLeft WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "FrontRight WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "RearLeft WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 30
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 30
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "RearRight WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 30
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 30
+        }
+      ]
+    },
+    {
+      "Name": "Left Slip",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "Right Slip",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "Front CarDamage",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "Rear CarDamage",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "Left CarDamage",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "Right CarDamage",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "Brake",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 45
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    }
+  ],
+  "TactSleeve": [
+    {
+      "Name": "ABS Active",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        }
+      ]
+    },
+    {
+      "Name": "RPMS",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        }
+      ]
+    },
+    {
+      "Name": "Speed",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 25
+        }
+      ]
+    },
+    {
+      "Name": "TC Active",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        }
+      ]
+    },
+    {
+      "Name": "Gear Shift",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 20
+        }
+      ]
+    },
+    {
+      "Name": "FrontLeft WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 7
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 14
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 54
+        }
+      ]
+    },
+    {
+      "Name": "FrontRight WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 7
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 14
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 54
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 60
+        }
+      ]
+    },
+    {
+      "Name": "RearLeft WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        }
+      ]
+    },
+    {
+      "Name": "RearRight WheelRumble",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 20
+        }
+      ]
+    },
+    {
+      "Name": "Left Slip",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 1
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 14
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "Right Slip",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 1
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 14
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        }
+      ]
+    },
+    {
+      "Name": "CarDamage",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 50
+        }
+      ]
+    },
+    {
+      "Name": "Brake",
+      "MotorInfos": [
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 40
+        }
+      ]
+    }
+  ]
+}

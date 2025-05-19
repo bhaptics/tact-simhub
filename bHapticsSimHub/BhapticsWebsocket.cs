@@ -12,12 +12,9 @@ namespace bHapticsSimHub
         private Timer _timer;
         private string _appId;
         private string _apiKey;
+        private string _version = "1.0.1";
         private string _url = "wss://127.0.0.1:15882/v3/feedback";
         private bool _websocketConnected = false;
-        private int _retryCount = 0;
-        private const int MaxRetryCount = 5;
-
-        private bool _enable;
 
         public BhapticsWebsocket(string appId, string apiKey, bool retry = true)
         {
@@ -31,17 +28,12 @@ namespace bHapticsSimHub
         {
             if (!_websocketConnected)
             {
-                if (!_enable)
-                {
-                    return;
-                }
-                Console.Write("RetryConnect()\n");
-                _retryCount++;
+                SimHub.Logging.Current.Warn("[bHaptics] RetryConnect()");
                 _websocket.Connect();
-                if (_retryCount >= MaxRetryCount)
-                {
-                    _timer.Stop();
-                }
+            }
+            else
+            {
+                _timer.Stop();
             }
         }
 
@@ -49,7 +41,7 @@ namespace bHapticsSimHub
         {
             if (_websocket != null)
             {
-                SimHub.Logging.Current.Info("Initialized\n");
+                SimHub.Logging.Current.Info("[bHaptics] Initialized");
                 return;
             }
 
@@ -60,7 +52,7 @@ namespace bHapticsSimHub
                 _timer.Start();
             }
 
-            _websocket = new WebSocket($"{_url}?workspace_id={_appId}&api_key={_apiKey}");
+            _websocket = new WebSocket($"{_url}?workspace_id={_appId}&api_key={_apiKey}&version={_version}");
             _websocket.SslConfiguration.ServerCertificateValidationCallback += (sender, certificate, chain, errors) =>
             {
                 return true;
@@ -78,6 +70,17 @@ namespace bHapticsSimHub
         {
             SimHub.Logging.Current.Info($"[bHaptics] ws onClose");
             _websocketConnected = false;
+
+            if (_timer == null)
+            {
+                _timer = new Timer(3 * 1000); // 3 sec
+                _timer.Elapsed += TimerOnElapsed;
+                _timer.Start();
+            }
+            else
+            {
+                _timer.Start();
+            }
         }
 
         private void Websocket_OnError(object sender, ErrorEventArgs e)
@@ -108,6 +111,25 @@ namespace bHapticsSimHub
         public int Play(int[] motors, int duration = 80, int pos = 0)
         {
             var requestId = new Random(Guid.NewGuid().GetHashCode()).Next(int.MaxValue);
+
+            var msg = Sdk2Message.SdkPlayDot(new PlayDotMessage()
+            {
+                DurationMillis = duration,
+                Position = pos,
+                RequestId = requestId,
+                MotorValues = motors
+            });
+
+            Send(msg);
+
+            return requestId;
+        }
+
+        public int PlaySleeves(int[] motors, bool isLeft = true, int duration = 80)
+        {
+            var requestId = new Random(Guid.NewGuid().GetHashCode()).Next(int.MaxValue);
+
+            var pos = (isLeft) ? 1 : 2;
 
             var msg = Sdk2Message.SdkPlayDot(new PlayDotMessage()
             {
