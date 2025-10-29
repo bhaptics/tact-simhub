@@ -91,82 +91,82 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 80
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 80
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 60
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 10
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 10
         }
       ]
     },
@@ -176,82 +176,82 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 3
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 3
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 15
         }
       ]
     },
@@ -346,82 +346,82 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 100
+          "Intensity": 60
         }
       ]
     },
@@ -431,42 +431,42 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
@@ -516,42 +516,42 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 70
         },
         {
           "Name": null,
@@ -771,42 +771,42 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
@@ -856,82 +856,82 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         }
       ]
     },
@@ -941,42 +941,42 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
@@ -1026,82 +1026,82 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         }
       ]
     },
@@ -1111,82 +1111,82 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         }
       ]
     },
@@ -1196,82 +1196,82 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 50
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 60
         }
       ]
     },
@@ -1281,11 +1281,26 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 100
         },
         {
           "Name": null,
-          "IsSelected": false,
+          "IsSelected": true,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
+          "Intensity": 100
+        },
+        {
+          "Name": null,
+          "IsSelected": true,
           "Intensity": 100
         },
         {
@@ -1295,28 +1310,13 @@
         },
         {
           "Name": null,
-          "IsSelected": true,
-          "Intensity": 45
+          "IsSelected": false,
+          "Intensity": 100
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 45
-        },
-        {
-          "Name": null,
-          "IsSelected": true,
-          "Intensity": 45
-        },
-        {
-          "Name": null,
-          "IsSelected": true,
-          "Intensity": 45
-        },
-        {
-          "Name": null,
-          "IsSelected": true,
-          "Intensity": 45
+          "Intensity": 100
         },
         {
           "Name": null,
@@ -1403,32 +1403,32 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         }
       ]
     },
@@ -1438,32 +1438,32 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 25
+          "Intensity": 15
         }
       ]
     },
@@ -1477,12 +1477,7 @@
         },
         {
           "Name": null,
-          "IsSelected": true,
-          "Intensity": 20
-        },
-        {
-          "Name": null,
-          "IsSelected": true,
+          "IsSelected": false,
           "Intensity": 20
         },
         {
@@ -1492,12 +1487,17 @@
         },
         {
           "Name": null,
-          "IsSelected": true,
+          "IsSelected": false,
           "Intensity": 20
         },
         {
           "Name": null,
-          "IsSelected": true,
+          "IsSelected": false,
+          "Intensity": 20
+        },
+        {
+          "Name": null,
+          "IsSelected": false,
           "Intensity": 20
         }
       ]
@@ -1508,32 +1508,32 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 20
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 20
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 20
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 20
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 20
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 20
+          "Intensity": 60
         }
       ]
     },
@@ -1558,17 +1558,17 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 7
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 14
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 54
+          "Intensity": 60
         }
       ]
     },
@@ -1578,17 +1578,17 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 7
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 14
+          "Intensity": 60
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 54
+          "Intensity": 60
         },
         {
           "Name": null,
@@ -1698,12 +1698,12 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 1
+          "Intensity": 40
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 14
+          "Intensity": 40
         },
         {
           "Name": null,
@@ -1718,12 +1718,12 @@
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 1
+          "Intensity": 40
         },
         {
           "Name": null,
           "IsSelected": false,
-          "Intensity": 14
+          "Intensity": 40
         },
         {
           "Name": null,
@@ -1788,32 +1788,32 @@
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         },
         {
           "Name": null,
           "IsSelected": true,
-          "Intensity": 40
+          "Intensity": 70
         }
       ]
     }

@@ -13,6 +13,7 @@ namespace bHapticsSimHub
         public Profile Profile { get; set; }
         public string Id { get; set; }
         public bool IsDefault { get; set; }
+        public int VersionCode { get; set; }
         public Visibility IsVisible
         {
             get
