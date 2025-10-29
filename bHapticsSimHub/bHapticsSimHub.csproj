@@ -373,7 +373,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <Resource Include="Profile\reset.bhaptics" />
+    <Resource Include="Profile\general.bhaptics" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />

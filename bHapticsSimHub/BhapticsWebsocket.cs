@@ -12,7 +12,7 @@ namespace bHapticsSimHub
         private Timer _timer;
         private string _appId;
         private string _apiKey;
-        private string _version = "1.0.1";
+        private string _version = "1.0.2";
         private string _url = "wss://127.0.0.1:15882/v3/feedback";
         private bool _websocketConnected = false;
 

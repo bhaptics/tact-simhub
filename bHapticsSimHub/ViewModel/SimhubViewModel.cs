@@ -2,6 +2,7 @@
 using FMOD;
 using Microsoft.Win32;
 using Newtonsoft.Json;
+using SimHub.Plugins.DataPlugins.RGBDriver.Settings;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -182,43 +183,9 @@ namespace bHapticsSimHub
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public string[] ProfileList { get; set; } = { "Default Profile", "Assetto Corsa Competizione" };
-        private string[] _profileFileNameList { get; set; } = { "reset.bhaptics", "reset.bhaptics" };
-
+        public string[] ProfileList { get; set; } = { "General" };
+        private string[] _profileFileNameList { get; set; } = {"general.bhaptics" };
         private int _profileIndex = 0;
-        public int ProfileSelectedIndex
-        {
-            get => _profileIndex;
-            set
-            {
-                _profileIndex = value;
-                OnPropertyChanged(nameof(ProfileSelectedIndex));
-
-                if (_profileIndex < 0)
-                {
-                    return;
-                }
-
-                try
-                {
-                    Uri resourceUri = new Uri($"pack://application:,,,/bHapticsSimHub;component/Profile/{_profileFileNameList[_profileIndex]}", UriKind.Absolute);
-                    using (Stream stream = Application.GetResourceStream(resourceUri).Stream)
-                    using (StreamReader reader = new StreamReader(stream))
-                    {
-                        string jsonContent = reader.ReadToEnd();
-                        Task.Run(async () =>
-                        {
-                            await SetProfile(jsonContent);
-                        });
-                    }
-                }
-                catch (Exception ex)
-                {
-                    SimHub.Logging.Current.Error($"[bHaptics] ProfileSelectedIndex Exception {ex.Message}", ex);
-                }
-            }
-        }
-
         private bHapticsDB _db;
 
         static SimhubViewModel()
@@ -253,39 +220,32 @@ namespace bHapticsSimHub
             InitializeMotors();
 
             _db = new bHapticsDB();
-            _db.Initialized += () =>
+            _db.Initialized += async() =>
             {
+                await InitProfile();
+
                 var result = _db.GetSimhubProfileList();
                 SimhubUtils.WriteLog($"Initialized DB result: {result.Count}");
                 if (result.Count > 0)
                 {
-                    Profiles = new ObservableCollection<SimhubProfile>(result.OrderByDescending(x => x.IsDefault));
-
-                    SelectedProfile = Profiles[0];
-                    Items = new ObservableCollection<EffectProfile>(SelectedProfile.Profile.TactSuit);
-                    SleevesItems = new ObservableCollection<EffectProfile>(SelectedProfile.Profile.TactSleeve);
-
-                    OnPropertyChanged(nameof(Items));
-                    OnPropertyChanged(nameof(SleevesItems));
-                }
-                else
-                {
-                    InitProfile();
+                    foreach(var profile in result)
+                    {
+                        Profiles.Add(profile);
+                    }
                 }
 
+                Profiles = new ObservableCollection<SimhubProfile>(Profiles.OrderByDescending(x => x.IsDefault));
+
+                SelectedProfile = Profiles[0];
+
+                Items = new ObservableCollection<EffectProfile>(SelectedProfile.Profile.TactSuit);
+                SleevesItems = new ObservableCollection<EffectProfile>(SelectedProfile.Profile.TactSleeve);
+
+                OnPropertyChanged(nameof(Items));
+                OnPropertyChanged(nameof(SleevesItems));
                 OnPropertyChanged(nameof(Profiles));
             };
             _db.Initialize();
-        }
-
-        private void GetSimhubProfileList()
-        {
-            var result = _db.GetSimhubProfileList();
-            if (result.Count > 0)
-            {
-                Profiles = new ObservableCollection<SimhubProfile>(result.OrderByDescending(x=> x.IsDefault));
-                OnPropertyChanged(nameof(Profiles));
-            }
         }
 
         private void DeleteProfile(object obj)
@@ -300,7 +260,8 @@ namespace bHapticsSimHub
             {
                 SimhubUtils.WriteLog($"DeleteProfile: {profile.Id}");
                 _db.RemoveSimhubProfile(profile.Id);
-                GetSimhubProfileList();
+                var findItem = Profiles.FirstOrDefault(x=> x.Id.Equals(profile.Id));
+                Profiles.Remove(findItem);
             }
             catch (Exception ex)
             {
@@ -337,33 +298,29 @@ namespace bHapticsSimHub
             }
         }
 
-        private void InitProfile()
+        private async Task InitProfile()
         {
             try
             {
-                Uri resourceUri = new Uri("pack://application:,,,/bHapticsSimHub;component/Profile/reset.bhaptics", UriKind.Absolute);
+                Uri resourceUri = new Uri("pack://application:,,,/bHapticsSimHub;component/Profile/general.bhaptics", UriKind.Absolute);
                 using (Stream stream = Application.GetResourceStream(resourceUri).Stream)
                 using (StreamReader reader = new StreamReader(stream))
                 {
                     string jsonContent = reader.ReadToEnd();
-                    Task.Run(async () =>
+                    var result = await SetProfile(jsonContent);
+                    if (result != null)
                     {
-                        var result = await SetProfile(jsonContent);
-                        if (result != null)
+                        var profile = new SimhubProfile
                         {
-                            var profile = new SimhubProfile
-                            {
-                                Profile = result,
-                                Id = "Assetto Corsa Competizione",
-                                IsDefault = true
-                            };
+                            Profile = result,
+                            Id = "General",
+                            IsDefault = true
+                        };
 
-                            _db.InsertSimhubProfile(profile);
-                            Profiles.Add(profile);
-                            SelectedProfile = profile;
-                            OnPropertyChanged(nameof(Profiles));
-                        }
-                    });
+                        Profiles.Add(profile);
+                        SelectedProfile = profile;
+                        OnPropertyChanged(nameof(Profiles));
+                    }
                 }
             }
             catch (Exception ex)
@@ -462,7 +419,7 @@ namespace bHapticsSimHub
                                 {
                                     _db.InsertSimhubProfile(profile);
                                     SelectedProfile = profile;
-                                    GetSimhubProfileList();
+                                    Profiles.Add(profile);
                                 }
                                 else
                                 {
@@ -484,7 +441,7 @@ namespace bHapticsSimHub
         {
             try
             {
-                Uri resourceUri = new Uri("pack://application:,,,/bHapticsSimHub;component/Profile/reset.bhaptics", UriKind.Absolute);
+                Uri resourceUri = new Uri("pack://application:,,,/bHapticsSimHub;component/Profile/general.bhaptics", UriKind.Absolute);
                 using (Stream stream = Application.GetResourceStream(resourceUri).Stream)
                 using (StreamReader reader = new StreamReader(stream))
                 {
